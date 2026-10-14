@@ -1,0 +1,821 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<script>(function(){try{var l=localStorage.getItem('snl-lang');if(l==='en'||l==='ar'){var h=document.documentElement;h.lang=l;if(l==='ar'){h.dir='rtl';var k=document.createElement('link');k.rel='stylesheet';k.href='https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600&display=swap';document.head.appendChild(k);}}}catch(e){}})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>İç Oda Kapıları: Melamin, PVC, Lake, Yangına Dayanımlı Kapı | SNL DOOR Konya, Türkiye</title>
+<meta name="keywords" content="SNL DOOR, SNL Kapı, SNL PAN, Şeneller Kapı, Şeneller Orman, Şeneller Kereste, Şeneller Orman Ürünleri, Akşehir Konya iç oda kapısı">
+<meta name="description" content="Konya Akşehir'de melamin, PVC (membran), lake ve yangına dayanımlı iç oda kapıları; otel ve yurt kapıları, melamin kapı yüzeyi ve masif panel. Türkiye, Konya, Antalya ve İç Anadolu'ya.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Şeneller Orman Ürünleri · SNL DOOR">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:title" content="İç Oda Kapıları: Melamin, PVC, Lake, Yangına Dayanımlı Kapı | SNL DOOR Konya, Türkiye">
+<meta property="og:description" content="Konya Akşehir'de melamin, PVC (membran), lake ve yangına dayanımlı iç oda kapıları; otel ve yurt kapıları, melamin kapı yüzeyi ve masif panel. Türkiye, Konya, Antalya ve İç Anadolu'ya.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500;600&family=Azeret+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+/* ── Geri-al butonu ───────────────────────────────────── */
+#btt{
+  position:fixed;bottom:92px;right:28px;z-index:100;
+  width:46px;height:46px;border-radius:9999px;
+  background:var(--gold);color:#ffffff;
+  display:flex;align-items:center;justify-content:center;
+  border:none;cursor:pointer;
+  box-shadow:0 4px 18px rgba(28,28,30,.28);
+  opacity:0;transform:translateY(12px);pointer-events:none;
+  transition:opacity .3s,transform .3s,background .2s;
+}
+#btt.vis{opacity:1;transform:none;pointer-events:auto}
+#btt:hover{background:var(--gold-2)}
+#btt svg{width:20px;height:20px}
+
+/* ── Yangına dayanımlı: AYOCIN dili, espresso zemin, parlayan ürün ── */
+.firedoor{position:relative;color:#fcf6ec;background:radial-gradient(60% 70% at 30% 52%,rgba(253,198,179,.2),rgba(253,198,179,0) 70%),#2e2521}
+.fd-scroll{position:relative;height:470vh}
+.fd-sticky{position:sticky;top:0;height:100vh;display:flex;align-items:center;padding-top:calc(var(--hdr) + 4px);box-sizing:border-box;overflow:hidden}
+.fd-inner{width:100%}
+.fd-top{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-bottom:14px;border-bottom:1px solid rgba(252,246,236,.14);margin-bottom:clamp(10px,2.4vh,26px);font-family:'Azeret Mono',monospace;font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:rgba(252,246,236,.7)}
+.fd-stage{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(20px,3.5vw,56px);align-items:center}
+.fd-scene{position:relative;perspective:1500px;display:flex;align-items:center;justify-content:flex-start;padding-left:clamp(8px,3vw,44px);min-height:clamp(320px,54vh,540px)}
+.fd-glow{position:absolute;top:50%;left:46%;width:80%;height:80%;transform:translate(-50%,-50%);background:radial-gradient(ellipse,rgba(255,226,170,.38),rgba(255,226,170,0) 66%);filter:blur(34px);pointer-events:none}
+.fd-shadow{position:absolute;bottom:5%;left:calc(clamp(8px,3vw,44px) + 100px);width:min(220px,30%);height:26px;transform:translateX(-50%);background:radial-gradient(ellipse,rgba(0,0,0,.5),rgba(0,0,0,0) 70%);filter:blur(10px);pointer-events:none}
+.fd-float{position:relative;animation:fdFloat 7s ease-in-out infinite}
+@keyframes fdFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.fd-door{position:relative;width:clamp(150px,16vw,200px);height:clamp(250px,28vw,350px);transform-style:preserve-3d;transform:rotateX(3deg) rotateY(-22deg)}
+.fd-comp{position:absolute;inset:0;transform-style:preserve-3d;border-radius:5px;backface-visibility:hidden;transition:box-shadow .7s ease}
+.fd-comp.act{box-shadow:0 0 0 1px rgba(255,255,255,.28),0 30px 70px rgba(0,0,0,.45),0 0 60px rgba(255,214,170,.4)}
+
+.fd-skin{background:#f4f2ee;box-shadow:inset 0 0 0 1px rgba(46,37,33,.08)}
+.fd-skin .panel{position:absolute;left:19%;right:19%;border-radius:2px;background:#faf9f7;box-shadow:inset 0 0 0 2px #e4dfd7,inset 0 0 0 6px #f2efea}
+.fd-skin .p1{top:8%;height:84%}
+.fd-skin .handle{position:absolute;right:8%;top:52%;transform:translateY(-50%);width:7px;height:40px;border-radius:4px;background:#8c9096}
+.fd-skin .hinge{position:absolute;left:-3px;width:6px;height:26px;border-radius:2px;background:#9aa0a6}
+.fd-skin .h1{top:14%}.fd-skin .h2{top:78%}
+.fd-edge{position:absolute;top:0;right:0;width:22px;height:100%;transform-origin:right center;transform:rotateY(90deg);background:#d8d3cb;border-radius:2px}
+.fd-seren{background:transparent;border:26px solid #e0c999;border-radius:4px;box-shadow:inset 0 0 0 2px rgba(60,45,20,.14)}
+.fd-core{top:24px;left:24px;right:24px;bottom:24px;border-radius:2px;
+  background:radial-gradient(circle,#f2dcd5 1.2px,transparent 1.8px) 0 0/10px 10px,radial-gradient(circle,#dcb3ab 1px,transparent 1.6px) 5px 3px/13px 13px,radial-gradient(circle,#f6e6e0 .9px,transparent 1.5px) 2px 7px/11px 11px,radial-gradient(circle,#c99790 1.3px,transparent 1.9px) 7px 6px/17px 17px,linear-gradient(160deg,#85524f 0%,#733f40 100%);
+  box-shadow:inset 0 0 0 2px rgba(60,25,25,.22)}
+.fd-pervaz{top:-18px;left:-18px;right:-18px;bottom:-18px;border:16px solid #ebe6dd;background:transparent;border-radius:3px}
+.fd-pervaz .fd-fitil{position:absolute;inset:0;border:5px solid #1b1b1d;border-radius:2px}
+.fd-giyotin{top:auto;bottom:-6px;left:4px;right:4px;height:18px;border-radius:3px;background:#aeb3b9;box-shadow:inset 0 -3px 0 rgba(0,0,0,.14)}
+
+.fd-panel{display:flex;flex-direction:column;min-width:0}
+.fd-figure{font-family:'Azeret Mono',monospace;font-weight:500;font-size:clamp(84px,11.5vw,170px);line-height:.88;letter-spacing:-.08em;color:#fcf6ec;white-space:nowrap}
+.fd-figure #fd-num{display:inline-block}
+.fd-figure small{font-family:'Inter',sans-serif;font-size:clamp(15px,1.5vw,20px);font-weight:400;letter-spacing:0;color:rgba(252,246,236,.5);margin-left:12px;vertical-align:top;position:relative;top:.7em}
+.fd-cap{font-size:clamp(26px,3.1vw,44px);font-weight:500;letter-spacing:-.03em;line-height:1.04;color:#fcf6ec;margin:clamp(14px,2.4vh,26px) 0 12px}
+.fd-desc{font-size:16px;line-height:1.65;color:rgba(252,246,236,.74);max-width:44ch;min-height:92px;margin:0}
+.fd-spec{margin-top:14px;padding-top:12px;border-top:1px solid rgba(252,246,236,.14);font-family:'Azeret Mono',monospace;font-size:12px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:rgba(252,246,236,.6);min-height:1.4em}
+.fd-figure #fd-num,.fd-cap,.fd-desc,.fd-spec{transition:opacity .4s ease,transform .6s cubic-bezier(.22,1,.36,1)}
+.fd-fade{opacity:0 !important;transform:translateY(14px)}
+.fd-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-top:clamp(16px,2.6vh,26px)}
+.fd-tab{background:transparent;border:1px solid rgba(252,246,236,.16);border-radius:0;padding:10px 18px;font-size:14px;font-weight:400;line-height:1.4;color:rgba(252,246,236,.62);cursor:pointer;transition:color .3s,border-color .3s,background .3s}
+.fd-tab:hover{color:#fcf6ec;border-color:rgba(252,246,236,.4)}
+.fd-tab.on{color:#fcf6ec;border-color:rgba(252,246,236,.75);background:rgba(252,246,236,.06)}
+.fd-actions{display:flex;align-items:center;gap:14px;margin-top:clamp(16px,2.6vh,26px);flex-wrap:wrap}
+.fd-btns{display:flex;gap:10px}
+.fd-btn{width:46px;height:46px;border-radius:100%;border:1px solid #2e2521;background:#f4e8d7;display:inline-flex;align-items:center;justify-content:center;color:#2e2521;transition:transform .25s,background .25s}
+.fd-btn:hover:not(:disabled){background:#fcf6ec;transform:scale(1.06)}
+.fd-btn:disabled{opacity:.3;cursor:default}
+.fd-btn svg{width:16px;height:16px}
+.fd-pill{position:relative;display:inline-flex;align-items:center;padding:10px 60px 10px 20px;border-radius:20px;background:#fcf6ec;border:1px solid #fcf6ec;color:#2e2521;font-size:14px;font-weight:500;line-height:1;transition:background .3s,color .3s}
+.fd-pill svg{position:absolute;right:20px;top:50%;width:18px;height:18px;margin-top:-9px;transition:transform .35s cubic-bezier(.22,1,.36,1)}
+.fd-pill:hover{background:transparent;color:#fcf6ec}
+.fd-pill:hover svg{transform:translateX(4px)}
+
+.firedoor.no-pin .fd-scroll{height:auto}
+.firedoor.no-pin .fd-sticky{position:static;height:auto;padding:clamp(52px,8vw,96px) 0;overflow:visible}
+@media(max-width:860px){.fd-stage{grid-template-columns:1fr;gap:26px}.fd-scene{min-height:clamp(300px,70vw,420px)}}
+@media(prefers-reduced-motion:reduce){.fd-float{animation:none}.fd-comp{transition:none}}
+.door-slide.feat{border-color:rgba(185,28,28,.5);box-shadow:0 2px 8px rgba(28,28,30,.06),0 10px 30px rgba(185,28,28,.12)}
+.door-slide.feat .link{color:var(--gold)}
+
+/* ── Neden Biz (açık AYOCIN) ── */
+.neden{background:#f8f2e7;padding:clamp(72px,10vw,124px) 0;position:relative;overflow:hidden}
+.neden::before{content:"";position:absolute;top:-25%;right:-8%;width:56vw;height:56vw;max-width:680px;max-height:680px;background:radial-gradient(circle,rgba(253,198,179,.35) 0%,rgba(253,198,179,0) 70%);pointer-events:none}
+.neden .eyebrow{color:var(--gold);position:relative}
+.neden .h2{color:#2e2521;margin-top:14px;position:relative}
+.neden .lead{color:#6b5f56;margin-top:16px;position:relative}
+
+/* Güven şeridi */
+.trust{background:var(--navy-2);border-bottom:1px solid var(--line)}
+.trust-g{display:grid;grid-template-columns:repeat(5,minmax(0,1fr))}
+.trust-it{display:block;padding:clamp(18px,2.2vw,28px) clamp(16px,2vw,30px);border-left:1px solid var(--line);transition:background .3s}
+.trust-it:first-child{border-left:0;padding-left:0}
+.trust-it:hover{background:rgba(255,255,255,.55)}
+.trust-it:first-child:hover{background:transparent}
+.trust-l{display:block;font-family:'Azeret Mono',monospace;font-size:11px;font-weight:500;letter-spacing:.14em;color:var(--gold)}
+.trust-v{display:block;font-size:clamp(17px,1.7vw,22px);font-weight:500;letter-spacing:-.02em;color:var(--ink);margin-top:6px;line-height:1.2}
+.trust-s{display:block;font-size:13.5px;color:var(--muted);margin-top:4px;line-height:1.5}
+@media(max-width:1100px){.trust-v{font-size:17px}.trust-s{font-size:13px}}
+@media(max-width:900px){
+  .trust-g{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .trust-it:nth-child(5){grid-column:span 2;border-top:1px solid var(--line)}
+  .trust-it:nth-child(odd){border-left:0;padding-left:0}
+  .trust-it:nth-child(n+3){border-top:1px solid var(--line)}
+}
+@media(max-width:520px){
+  .trust-g{grid-template-columns:1fr}
+  .trust-it:nth-child(5){grid-column:auto}
+  .trust-it,.trust-it:nth-child(odd){border-left:0;padding-left:0}
+  .trust-it:nth-child(n+2){border-top:1px solid var(--line)}
+}
+
+/* Neden Biz: ahşap halka yapboz */
+.neden.nay{--ac:#b91c1c;background:#f4f1ec;padding:clamp(64px,8vw,112px) 0;overflow:clip}
+.neden.nay::before{display:none}
+.nay .wrap{position:relative}
+.nay-l,.nay-h2{position:relative;z-index:2}
+.nay-l{display:block;font-family:'Azeret Mono',monospace;font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:rgba(46,37,33,.6)}
+.nay-h2{font-size:clamp(36px,4.6vw,64px);font-weight:300;letter-spacing:-.02em;line-height:1;color:#2e2521;margin:12px 0 0}
+.sp{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,84px);align-items:center;margin-top:clamp(28px,3.6vw,48px)}
+.sp-board{position:relative;width:100%;max-width:600px;aspect-ratio:1;justify-self:center}
+.sp-svg{width:100%;height:100%;overflow:visible;display:block}
+.sp:not(.on) .sp-g{opacity:0}
+.sp-g{transform-box:view-box;transform-origin:50% 50%;filter:drop-shadow(0 7px 9px rgba(24,11,2,.62));cursor:default}
+.sp-f{stroke:#3a2210;stroke-width:1.3;stroke-linejoin:round}
+.sp-g.hot .sp-f{stroke:#1f1106;stroke-width:1.8}
+.sp-b circle{fill:#f6efe3;stroke:#4a2d16;stroke-width:1}
+.sp-b text{font-family:'Azeret Mono',monospace;font-size:11px;font-weight:500;fill:#7a1515;letter-spacing:.04em}
+.sp-list{list-style:none;margin:0;padding:0}
+.sp-list li{display:grid;grid-template-columns:44px minmax(0,1fr);column-gap:10px;padding:clamp(14px,1.7vw,22px) 0;border-top:1px solid rgba(46,37,33,.16);opacity:0;transform:translateY(12px);transition:opacity .5s ease,transform .6s cubic-bezier(.16,1,.3,1)}
+.sp-list li:last-child{border-bottom:1px solid rgba(46,37,33,.16)}
+.sp-list li.in{opacity:1;transform:none}
+.sp-list .n{font-family:'Azeret Mono',monospace;font-size:12px;font-weight:500;letter-spacing:.14em;color:#b91c1c;padding-top:.5em}
+.sp-list h3{font-size:clamp(18px,1.7vw,24px);font-weight:400;letter-spacing:-.02em;line-height:1.18;margin:0 0 6px;color:#1f1a17;transition:color .25s ease}
+.sp-list p{font-size:15px;line-height:1.55;color:rgba(31,26,23,.74);margin:0}
+.sp-list li.hot h3{color:#9c1a1a}
+@media(max-width:900px){.sp{grid-template-columns:1fr}.sp-board{max-width:420px}}
+@media(prefers-reduced-motion:reduce){.sp-list li{opacity:1;transform:none;transition:none}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Şeneller Orman Ürünleri", "alternateName": ["SNL DOOR", "SNL Door", "SNL Kapı", "SNL PAN", "Şeneller Kapı", "Şeneller Orman", "Şeneller Kereste", "Şeneller Orman Ürünleri Akşehir"], "description": "Melamin, PVC (membran), lake ve yangına dayanımlı iç oda kapıları, melamin kapı yüzeyi ve masif panel üreticisi.", "foundingDate": "1976", "telephone": "+903328121300", "email": "info@senellergrup.com", "address": {"@type": "PostalAddress", "streetAddress": "Reis, 2. Sokak No:6/10, Organize Sanayi Bölgesi", "postalCode": "42560", "addressLocality": "Akşehir", "addressRegion": "Konya", "addressCountry": "TR"}, "geo": {"@type": "GeoCoordinates", "latitude": 38.30745557503927, "longitude": 31.607398551451197}, "areaServed": [{"@type": "Country", "name": "Türkiye"}, {"@type": "AdministrativeArea", "name": "Konya"}, {"@type": "AdministrativeArea", "name": "Antalya"}, {"@type": "AdministrativeArea", "name": "Ankara"}, {"@type": "AdministrativeArea", "name": "Eskişehir"}, {"@type": "AdministrativeArea", "name": "Kayseri"}, {"@type": "AdministrativeArea", "name": "Sivas"}, {"@type": "AdministrativeArea", "name": "Yozgat"}, {"@type": "AdministrativeArea", "name": "Kırşehir"}, {"@type": "AdministrativeArea", "name": "Kırıkkale"}, {"@type": "AdministrativeArea", "name": "Nevşehir"}, {"@type": "AdministrativeArea", "name": "Niğde"}, {"@type": "AdministrativeArea", "name": "Aksaray"}, {"@type": "AdministrativeArea", "name": "Karaman"}, {"@type": "AdministrativeArea", "name": "Çankırı"}], "knowsAbout": ["melamin kapı yüzeyi", "iç oda kapısı", "yangına dayanımlı kapı", "otel kapısı", "yurt kapısı", "PVC kapı", "membran kapı", "lake kapı", "masif panel"]}</script>
+</head>
+<body>
+<!-- ── Geri-al Butonu ──────────────────────────────────── -->
+<button id="btt" aria-label="Sayfanın üstüne dön" title="Yukarı">
+  <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10 15V5M5 10l5-5 5 5"/>
+  </svg>
+</button>
+
+<header class="hdr">
+  <div class="in">
+    <a class="brand" href="index.html" aria-label="Ana sayfa">
+      <span class="logo"><img src="assets/logo.png" alt="SNL DOOR"></span>
+      <span class="co">Şeneller<br>Orman Ürünleri</span>
+    </a>
+    <nav class="nav" aria-label="Ana menü">
+      <a href="index.html" class="on">Anasayfa</a>
+      <a href="kurumsal.html">Kurumsal</a>
+      <div class="dd">
+        <button type="button" aria-haspopup="true">Kapılar <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M1 3l4 4 4-4"/></svg></button>
+        <div class="menu">
+          <span class="menu-brand">SNL DOOR</span>
+          <a href="melamin-kapilar.html" data-img="assets/roma.jpg">Melamin Kapılar</a>
+          <a href="pvc-kapilar.html" data-img="assets/pvc-06.jpg">PVC Kapılar</a>
+          <a href="lake-kapilar.html" data-img="assets/lake-01.jpg">Lake Kapılar</a>
+          <a href="yangina-dayanimli-kapilar.html" class="fire" data-img="assets/teak.jpg">Yangına Dayanımlı Kapılar</a>
+          <div class="menu-pv" aria-hidden="true"><img alt=""></div>
+        </div>
+      </div>
+      <a href="snl-pan.html">Masif Panel</a>
+      <a href="melamin-yuzey-yari-mamul.html">Melamin Yüzey ve Kapı Komponentleri</a>
+      <a href="iletisim.html">İletişim</a>
+    </nav>
+    <div class="hdr-r">
+      <div class="lang" role="group" aria-label="Dil seçimi">
+        <button type="button" class="lang-b on" data-lang="tr" aria-pressed="true" title="Türkçe">TR</button>
+        <button type="button" class="lang-b" data-lang="en" aria-pressed="false" title="English">EN</button>
+        <button type="button" class="lang-b" data-lang="ar" aria-pressed="false" title="العربية">AR</button>
+      </div>
+      <button class="burger" id="burger" type="button" aria-label="Menüyü aç" aria-expanded="false"><i></i></button>
+    </div>
+  </div>
+</header>
+<div class="mnav" id="mnav">
+  <a href="index.html">Anasayfa</a>
+  <a href="kurumsal.html">Kurumsal</a>
+  <a href="melamin-kapilar.html">Kapılar</a>
+  <div class="sub"><span class="sub-brand">SNL DOOR</span><a href="melamin-kapilar.html">Melamin Kapılar</a><a href="pvc-kapilar.html">PVC Kapılar</a><a href="lake-kapilar.html">Lake Kapılar</a><a href="yangina-dayanimli-kapilar.html" class="fire">Yangına Dayanımlı Kapılar</a></div>
+  <a href="snl-pan.html">Masif Panel</a>
+  <a href="melamin-yuzey-yari-mamul.html">Melamin Yüzey ve Kapı Komponentleri</a>
+  <a href="iletisim.html">İletişim</a>
+</div>
+
+<main>
+
+<!-- ── HERO ─────────────────────────────────────────────── -->
+<section class="hero" aria-label="Giriş" style="position:relative;height:calc(100svh - var(--hdr));min-height:560px;overflow:hidden;background:#0c1209">
+  <video id="hero-vid" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" autoplay muted loop playsinline poster="assets/poster.jpg">
+    <source src="assets/hero.mp4" type="video/mp4">
+  </video>
+  <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,14,21,.82) 0%,rgba(13,14,21,.5) 45%,rgba(13,14,21,.15) 75%),linear-gradient(0deg,rgba(13,14,21,.7) 0%,rgba(13,14,21,0) 45%)"></div>
+  <div class="wrap" style="position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:clamp(48px,9vh,96px)">
+    <div class="eyebrow" style="color:#e88a84">Şeneller Orman Ürünleri</div>
+    <div class="hero-slogan"><p>Dünyanın ortasından açılan kapı</p></div>
+    <h1 style="font-size:clamp(17px,1.55vw,22px);font-weight:400;max-width:44ch;margin:0 0 12px;color:#f4f1ec;line-height:1.45">Melamin, PVC, lake ve yangına dayanımlı iç oda kapıları.</h1>
+    <p style="font-size:16px;color:#d9d4c6;max-width:520px;font-weight:300">Melamin yüzeyden kapıya, masif panelden yarı mamule: tek çatı altında üretim.</p>
+    <nav class="hero-lines" aria-label="Ürün grupları">
+      <a class="hl" href="#kapi-modelleri" style="--i:0"><span class="hl-n">01</span><span class="hl-t">Kapılar</span><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5"/></svg></a>
+      <a class="hl" href="melamin-yuzey-yari-mamul.html#melamin-yuzeyleri" style="--i:1"><span class="hl-n">02</span><span class="hl-t">Melamin kapı yüzeyleri</span><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5"/></svg></a>
+      <a class="hl" href="melamin-yuzey-yari-mamul.html#yari-mamul" style="--i:2"><span class="hl-n">03</span><span class="hl-t">Kapı komponentleri</span><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5"/></svg></a>
+      <a class="hl" href="iletisim.html" style="--i:3"><span class="hl-n">04</span><span class="hl-t">İletişim</span><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5"/></svg></a>
+    </nav>
+  </div>
+</section>
+
+<!-- ── GÜVEN ŞERİDİ ───────────────────────────────── -->
+<section class="trust" aria-label="Belgeler ve ürün grupları">
+  <div class="wrap trust-g">
+    <a class="trust-it" href="yangina-dayanimli-kapilar.html"><span class="trust-l">TEKNİK BELGELENDİRME</span><span class="trust-v">EI 30 · E 30</span></a>
+    <a class="trust-it" href="melamin-kapilar.html"><span class="trust-l">İÇ ODA KAPILARI</span><span class="trust-v">Melamin, PVC, Lake</span></a>
+    <a class="trust-it" href="melamin-yuzey-yari-mamul.html"><span class="trust-l">MELAMİN YÜZEY</span><span class="trust-v">Melamin Yüzey Üretimi</span></a>
+    <a class="trust-it" href="snl-pan.html"><span class="trust-l">SNL PAN</span><span class="trust-v">Masif Panel Üretimi</span></a>
+    <a class="trust-it" href="melamin-yuzey-yari-mamul.html"><span class="trust-l">KAPI KOMPONENTLERİ</span><span class="trust-v">A'dan Z'ye Kapı Bileşenleri</span></a>
+  </div>
+</section>
+
+<!-- ── KAPI MODELLERİ ────────────────────────────────────── -->
+<section class="sec" id="kapi-modelleri">
+  <div class="wrap">
+    <div class="eyebrow" data-r>SNL Door</div>
+    <h2 class="h2" data-r>Kapı modellerimiz</h2>
+    <p class="lead" data-r>Konutlardan büyük ölçekli ticari yapılara; estetik beklentileri ve teknik performans standartlarını karşılayan iç kapı koleksiyonları.</p>
+    <div class="door-rail-wrap" data-r>
+      <div class="door-rail" id="door-rail">
+
+        <a class="door-slide" href="melamin-kapilar.html">
+          <div class="ds-img"><img src="assets/roma.jpg" alt="Melamin kapı" loading="lazy"></div>
+          <div class="ds-txt">
+            <h3>Melamin Kapılar</h3>
+            <p>Melamin yüzey iç oda kapıları. Renk ve desen seçenekleriyle her projeye uygun.</p>
+            <span class="link">İncele</span>
+          </div>
+        </a>
+
+        <a class="door-slide" href="yangina-dayanimli-kapilar.html">
+          <div class="ds-img"><img src="assets/teak.jpg" alt="Yangına dayanımlı kapı" loading="lazy"></div>
+          <div class="ds-txt">
+            <span class="df-badge">EI-30 Belgeli</span>
+            <h3>Yangına Dayanımlı</h3>
+            <p>Otel, yurt, hastane ve kurumsal projeler için TS EN 1634-1 sertifikalı, 30 dakika alev ve duman sızdırmazlığı sağlayan çözüm</p>
+            <span class="link">İncele</span>
+          </div>
+        </a>
+
+        <a class="door-slide" href="pvc-kapilar.html">
+          <div class="ds-img"><img src="assets/pvc-06.jpg" alt="PVC kapı" loading="lazy"></div>
+          <div class="ds-txt">
+            <h3>PVC Kapılar</h3>
+            <p>Yüksek nem direnci ve kolay temizlenebilir yüzey yapısı. Yoğun kullanım ve ıslak mekan gereksinimleri için uzun ömürlü üretim.</p>
+            <span class="link">İncele</span>
+          </div>
+        </a>
+
+        <a class="door-slide" href="lake-kapilar.html">
+          <div class="ds-img"><img src="assets/lake-12.jpg" alt="Lake kapı" loading="lazy"></div>
+          <div class="ds-txt">
+            <h3>Lake Kapılar</h3>
+            <p>Özel frezeleme detayları ve kusursuz yüzey bitişi. Modern mimari projeler için mat veya parlak poliüretan boya uygulamaları.</p>
+            <span class="link">İncele</span>
+          </div>
+        </a>
+
+      </div>
+      <div class="rail-nav">
+        <button class="rail-btn" id="rail-prev" type="button" aria-label="Önceki">
+          <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 3L5 9l6 6"/></svg>
+        </button>
+        <button class="rail-btn" id="rail-next" type="button" aria-label="Sonraki">
+          <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3l6 6-6 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── YANGINA DAYANIM - TIKLAMALI 3D ADIM GÖSTERİMİ ────── -->
+<section class="firedoor" id="firedoor">
+ <div class="fd-scroll" id="fd-scroll">
+  <div class="fd-sticky">
+   <div class="wrap fd-inner">
+    <div class="fd-top"><h2 class="fd-ttl">Yangına dayanımlı iç oda kapıları</h2><span>EI 30 · E 30</span></div>
+
+    <div class="fd-stage">
+      <div class="fd-scene" id="fd-scene" aria-hidden="true">
+        <div class="fd-glow"></div>
+        <div class="fd-shadow"></div>
+        <div class="fd-float">
+          <div class="fd-door" id="fd-door">
+            <div class="fd-comp fd-skin" id="fdc-skin">
+              <span class="hinge h1"></span><span class="hinge h2"></span>
+              <span class="panel p1"></span>
+              <span class="handle"></span>
+              <span class="fd-edge"></span>
+            </div>
+            <div class="fd-comp fd-seren" id="fdc-seren"></div>
+            <div class="fd-comp fd-core" id="fdc-core"></div>
+            <div class="fd-comp fd-pervaz" id="fdc-pervaz"><div class="fd-fitil"></div></div>
+            <div class="fd-comp fd-giyotin" id="fdc-giyotin"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fd-panel">
+        <div class="fd-figure"><span id="fd-num">01</span><small>/ 05</small></div>
+        <div class="fd-cap" id="fd-title">Kapı Yüzeyi</div>
+        <p class="fd-desc" id="fd-desc">Teknik kanadın dış yüzeyini oluşturan yüksek yoğunluklu levha. Yangın geciktirici melamin, poliüretan lake veya PVC yüzey seçenekleriyle yangın güvenliğini mimari tasarımla buluşturur.</p>
+        <div class="fd-spec" id="fd-spec">Melamin · Lake · PVC</div>
+        <div class="fd-tabs" id="fd-tabs" role="tablist">
+          <button class="fd-tab on" type="button" data-go="0">Yüzey</button>
+          <button class="fd-tab" type="button" data-go="1">Sereni</button>
+          <button class="fd-tab" type="button" data-go="2">Mineral çekirdek</button>
+          <button class="fd-tab" type="button" data-go="3">Pervaz</button>
+          <button class="fd-tab" type="button" data-go="4">Giyotin</button>
+        </div>
+        <div class="fd-actions">
+          <div class="fd-btns">
+            <button class="fd-btn" id="fd-prev" type="button" aria-label="Önceki adım" disabled><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 3L5 9l6 6"/></svg></button>
+            <button class="fd-btn" id="fd-next" type="button" aria-label="Sonraki adım"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3l6 6-6 6"/></svg></button>
+          </div>
+          <a class="fd-pill" href="yangina-dayanimli-kapilar.html">Teknik detaylar<svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h12M10 4l5 5-5 5"/></svg></a>
+        </div>
+      </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<div class="sfc-lb" id="sfc-lb" role="dialog" aria-modal="true" aria-label="Melamin kapı yüzeyi" hidden>
+  <button type="button" class="sfc-lb-x" id="sfc-lb-x" aria-label="Kapat">&times;</button>
+  <button type="button" class="sfc-lb-b sfc-lb-prev" id="sfc-lb-prev" aria-label="Önceki">←</button>
+  <div class="sfc-lb-in"><img id="sfc-lb-img" alt=""></div>
+  <button type="button" class="sfc-lb-b sfc-lb-next" id="sfc-lb-next" aria-label="Sonraki">→</button>
+</div>
+
+<!-- ── NEDEN BİZ ─────────────────────────────────────────── -->
+
+<!-- ── MELAMİN KAPI YÜZEYLERİ: açılı kayan seçim ─────── -->
+<section class="sfc" id="melamin-yuzeyleri">
+  <div class="wrap sfc-head">
+    <span class="sfc-eb" data-r>Melamin Kapı Yüzeyleri</span>
+    <h2 class="sfc-h" data-r>Yüzey Seçenekleri</h2>
+    <p class="sfc-p" data-r>Çizilmeye dayanıklı, boyanabilir melamin kapı yüzeyleri.</p>
+  </div>
+  <div class="wrap">
+    <div class="sfc-card" id="sfc-card">
+      <div class="sfc-stage" id="sfc-stage" tabindex="0" role="listbox" aria-label="Melamin kapı yüzeyleri">
+        <button type="button" class="sfc-it" style="--ar:0.487" aria-label="Yüzey 1"><img src="assets/yuzey-01.jpg" alt="Melamin kapı yüzeyi 1" loading="lazy" draggable="false"></button>
+        <button type="button" class="sfc-it" style="--ar:0.4328" aria-label="Yüzey 2"><img src="assets/yuzey-02.jpg" alt="Melamin kapı yüzeyi 2" loading="lazy" draggable="false"></button>
+        <button type="button" class="sfc-it" style="--ar:0.3878" aria-label="Yüzey 3"><img src="assets/yuzey-03.jpg" alt="Melamin kapı yüzeyi 3" loading="lazy" draggable="false"></button>
+        <button type="button" class="sfc-it" style="--ar:0.3792" aria-label="Yüzey 4"><img src="assets/yuzey-04.jpg" alt="Melamin kapı yüzeyi 4" loading="lazy" draggable="false"></button>
+        <button type="button" class="sfc-it" style="--ar:0.4103" aria-label="Yüzey 5"><img src="assets/yuzey-05.jpg" alt="Melamin kapı yüzeyi 5" loading="lazy" draggable="false"></button>
+        <button type="button" class="sfc-it" style="--ar:0.3938" aria-label="Yüzey 6"><img src="assets/yuzey-06.jpg" alt="Melamin kapı yüzeyi 6" loading="lazy" draggable="false"></button>
+        <button type="button" class="sfc-it" style="--ar:0.4311" aria-label="Yüzey 7"><img src="assets/yuzey-07.jpg" alt="Melamin kapı yüzeyi 7" loading="lazy" draggable="false"></button>
+        <button type="button" class="sfc-it" style="--ar:0.4057" aria-label="Yüzey 8"><img src="assets/yuzey-08.jpg" alt="Melamin kapı yüzeyi 8" loading="lazy" draggable="false"></button>
+        <button type="button" class="sfc-it" style="--ar:0.403" aria-label="Yüzey 9"><img src="assets/yuzey-09.jpg" alt="Melamin kapı yüzeyi 9" loading="lazy" draggable="false"></button>
+        <button type="button" class="sfc-it" style="--ar:0.4137" aria-label="Yüzey 10"><img src="assets/yuzey-10.jpg" alt="Melamin kapı yüzeyi 10" loading="lazy" draggable="false"></button>
+        <button type="button" class="sfc-it" style="--ar:0.4222" aria-label="Yüzey 11"><img src="assets/yuzey-11.jpg" alt="Melamin kapı yüzeyi 11" loading="lazy" draggable="false"></button>
+      </div>
+    </div>
+  </div>
+  <div class="wrap sfc-foot">
+    <div class="sfc-dots" id="sfc-dots" role="tablist" aria-label="Yüzey seçimi"><button type="button" class="sfc-dot" aria-label="1. yüzey"></button><button type="button" class="sfc-dot" aria-label="2. yüzey"></button><button type="button" class="sfc-dot" aria-label="3. yüzey"></button><button type="button" class="sfc-dot" aria-label="4. yüzey"></button><button type="button" class="sfc-dot" aria-label="5. yüzey"></button><button type="button" class="sfc-dot" aria-label="6. yüzey"></button><button type="button" class="sfc-dot" aria-label="7. yüzey"></button><button type="button" class="sfc-dot" aria-label="8. yüzey"></button><button type="button" class="sfc-dot" aria-label="9. yüzey"></button><button type="button" class="sfc-dot" aria-label="10. yüzey"></button><button type="button" class="sfc-dot" aria-label="11. yüzey"></button></div>
+    <div class="sfc-act">
+      <button type="button" class="sfc-b" id="sfc-prev" aria-label="Önceki">←</button>
+      <button type="button" class="sfc-b" id="sfc-next" aria-label="Sonraki">→</button>
+      
+    </div>
+  </div>
+</section>
+
+<!-- ── KAPI KOMPONENTLERİ ─────────────────────────────────── -->
+<section class="sec hk" id="komponentler">
+  <div class="wrap">
+    <div class="eyebrow" data-r>Yarı mamul</div>
+    <h2 class="h2" data-r>Kasa, Pervaz ve Kapı Elemanları</h2>
+    <p class="lead" data-r>Kapı üreticileri ve inşaat projeleri için kasa, pervaz, seren, süpürgelik ve profilleri standart ya da projeye özel ölçülerde, doğrudan entegre tesislerimizden sunuyoruz.</p>
+    <div class="hk-grid">
+      <a class="hk-it" href="melamin-yuzey-yari-mamul.html#yari-mamul" data-r><span class="hk-ph"><img src="assets/komp-kasa.jpg" alt="Kasa" loading="lazy"></span><span class="hk-n">Kasa</span></a>
+      <a class="hk-it" href="melamin-yuzey-yari-mamul.html#yari-mamul" data-r><span class="hk-ph"><img src="assets/komp-sandvic-kasa.jpg" alt="Sandviç Kasa" loading="lazy"></span><span class="hk-n">Sandviç Kasa</span></a>
+      <a class="hk-it" href="melamin-yuzey-yari-mamul.html#yari-mamul" data-r><span class="hk-ph"><img src="assets/komp-dekoratif-pervaz.jpg" alt="Dekoratif Pervaz" loading="lazy"></span><span class="hk-n">Dekoratif Pervaz</span></a>
+      <a class="hk-it" href="melamin-yuzey-yari-mamul.html#yari-mamul" data-r><span class="hk-ph"><img src="assets/komp-pervaz.jpg" alt="Pervaz" loading="lazy"></span><span class="hk-n">Pervaz</span></a>
+      <a class="hk-it" href="melamin-yuzey-yari-mamul.html#yari-mamul" data-r><span class="hk-ph"><img src="assets/komp-supurgelik.jpg" alt="Süpürgelik" loading="lazy"></span><span class="hk-n">Süpürgelik</span></a>
+      <a class="hk-it" href="melamin-yuzey-yari-mamul.html#yari-mamul" data-r><span class="hk-ph"><img src="assets/komp-kapi-sereni.jpg" alt="Kapı Sereni" loading="lazy"></span><span class="hk-n">Kapı Sereni</span></a>
+      <a class="hk-it" href="melamin-yuzey-yari-mamul.html#yari-mamul" data-r><span class="hk-ph"><img src="assets/komp-sandvic-panel.jpg" alt="Sandviç Panel" loading="lazy"></span><span class="hk-n">Sandviç Panel</span></a>
+      <a class="hk-it" href="melamin-yuzey-yari-mamul.html#yari-mamul" data-r><span class="hk-ph"><img src="assets/komp-lambri.jpg" alt="Lambri" loading="lazy"></span><span class="hk-n">Lambri</span></a>
+    </div>
+    <div class="row hk-row" data-r><a class="btn solid" href="melamin-yuzey-yari-mamul.html#yari-mamul">Tüm komponentleri incele</a></div>
+  </div>
+</section>
+
+<!-- ── SNL PAN CTA ────────────────────────────────────────── -->
+<section class="sec cta cta-pan">
+  <div class="wrap cta-pan-in">
+    <div class="cta-pan-t">
+      <div class="eyebrow" data-r>SNL Pan</div>
+      <h2 class="h2" data-r>Masif Panel: Çam, Ladin, Kayın, Meşe</h2>
+      <p class="lead" data-r>Doğal ahşaptan, istenen kalınlık ve ebatlarda masif panel üretimi. Mobilya, merdiven ve dekorasyon işleriniz için sağlam, pürüzsüz ve kullanıma hazır paneller.</p>
+      <div class="row" data-r><a class="btn solid" href="snl-pan.html">SNL Pan</a></div>
+    </div>
+    <a class="cta-pan-i" href="snl-pan.html" data-r aria-label="SNL Pan"><img src="assets/pan-hero.jpg" alt="Masif ahşap panel kaplı iç mekan" loading="lazy"></a>
+  </div>
+</section>
+
+<!-- ── MODEL VİTRİNİ ──────────────────────────────────────── -->
+<section class="sec showcase" id="vitrin">
+  <div class="wrap">
+    <div class="eyebrow" data-r>SNL Door</div>
+    <h2 class="h2" data-r>Öne çıkan modeller</h2>
+    <p class="lead" data-r>PVC ve melamin koleksiyonlarımızdan seçtiğimiz modeller.</p>
+  </div>
+  <div class="wrap vit-grid">
+    <a class="vit" href="pvc-kapilar.html" data-par="-18" data-r><span class="vi"><img src="assets/pvc-13.jpg" alt="PVC koleksiyonu P-13" loading="lazy"></span><span class="vc"><b>P-13</b><i>PVC koleksiyonu</i></span></a>
+    <a class="vit" href="melamin-kapilar.html" data-par="28" data-r><span class="vi"><img src="assets/roma.jpg" alt="Melamin koleksiyonu Roma" loading="lazy"></span><span class="vc"><b>Roma</b><i>Melamin koleksiyonu</i></span></a>
+    <a class="vit" href="pvc-kapilar.html" data-par="-18" data-r><span class="vi"><img src="assets/pvc-14.jpg" alt="PVC koleksiyonu P-14" loading="lazy"></span><span class="vc"><b>P-14</b><i>PVC koleksiyonu</i></span></a>
+    <a class="vit" href="melamin-kapilar.html" data-par="28" data-r><span class="vi"><img src="assets/torino.jpg" alt="Melamin koleksiyonu Torino" loading="lazy"></span><span class="vc"><b>Torino</b><i>Melamin koleksiyonu</i></span></a>
+    <a class="vit" href="pvc-kapilar.html" data-par="-18" data-r><span class="vi"><img src="assets/pvc-15.jpg" alt="PVC koleksiyonu P-15" loading="lazy"></span><span class="vc"><b>P-15</b><i>PVC koleksiyonu</i></span></a>
+    <a class="vit" href="melamin-kapilar.html" data-par="28" data-r><span class="vi"><img src="assets/matrix.jpg" alt="Melamin koleksiyonu Matrix" loading="lazy"></span><span class="vc"><b>Matrix</b><i>Melamin koleksiyonu</i></span></a>
+    <a class="vit" href="pvc-kapilar.html" data-par="-18" data-r><span class="vi"><img src="assets/pvc-16.jpg" alt="PVC koleksiyonu P-16" loading="lazy"></span><span class="vc"><b>P-16</b><i>PVC koleksiyonu</i></span></a>
+    <a class="vit" href="melamin-kapilar.html" data-par="28" data-r><span class="vi"><img src="assets/barok.jpg" alt="Melamin koleksiyonu Barok" loading="lazy"></span><span class="vc"><b>Barok</b><i>Melamin koleksiyonu</i></span></a>
+    <a class="vit" href="pvc-kapilar.html" data-par="-18" data-r><span class="vi"><img src="assets/pvc-17.jpg" alt="PVC koleksiyonu P-17" loading="lazy"></span><span class="vc"><b>P-17</b><i>PVC koleksiyonu</i></span></a>
+  </div>
+  <div class="wrap vit-links" data-r><a class="link" href="pvc-kapilar.html">Tüm PVC modelleri</a><a class="link" href="melamin-kapilar.html">Tüm Melamin modelleri</a></div>
+</section>
+
+<!-- ── BAYİ VE PROJE ──────────────────────────────────────── -->
+<section class="sec bayi" id="bayi">
+  <div class="wrap bayi-in">
+    <div class="bayi-t">
+      <div class="eyebrow" data-r>Bayiler ve projeler</div>
+      <h2 class="h2" data-r>Büyük Ölçekli Projeler ve Bayilik Ağı</h2>
+      <p class="lead" data-r>Otel, konut ve ticari projeleriniz için teknik şartnamelere uygun üretim kapasitesi, rekabetçi çözümler ve zamanında teslimat disiplini sunuyoruz.</p>
+      <div class="row" data-r><a class="btn solid" href="iletisim.html">Projeniz İçin Teklif Alın</a></div>
+    </div>
+    <div class="bayi-cat">
+      <a href="SNL-DOOR-Melamin-Katalog.pdf" target="_blank" rel="noopener" data-r><span>Melamin kataloğu</span><em>PDF</em></a>
+      <a href="SNL-DOOR-PVC-Katalog.pdf" target="_blank" rel="noopener" data-r><span>PVC kataloğu</span><em>PDF</em></a>
+      <a href="SNL-DOOR-Lake-Katalog.pdf" target="_blank" rel="noopener" data-r><span>Lake kataloğu</span><em>PDF</em></a>
+    </div>
+  </div>
+</section>
+
+<!-- ── NEDEN BİZ (puzzle) ───────────────────────────── -->
+<section class="neden nay" id="nay">
+  <div class="wrap">
+    <span class="nay-l">Neden Şeneller</span>
+    <h2 class="nay-h2">Neden biz?</h2>
+    <div class="sp" id="sp"><div class="sp-board"><svg class="sp-svg" id="sp-svg" viewBox="0 0 600 600" aria-hidden="true"><defs><pattern id="spwood" patternUnits="userSpaceOnUse" width="600" height="600"><image href="assets/wood-pz.jpg" width="600" height="600" preserveAspectRatio="xMidYMid slice"/></pattern><linearGradient id="spshine" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".34"/><stop offset=".55" stop-color="#fff" stop-opacity=".06"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient><radialGradient id="spdeep" cx=".5" cy=".5" r=".5"><stop offset=".86" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".4"/></radialGradient></defs><circle class="sp-plate" cx="300" cy="300" r="294" fill="url(#spwood)"/><circle cx="300" cy="300" r="294" fill="#241206" opacity=".6"/><circle cx="300" cy="300" r="294" fill="url(#spdeep)"/><circle cx="300" cy="300" r="294" fill="none" stroke="#3a2210" stroke-width="1.4"/><g class="sp-g" id="spg1" data-i="0"><path class="sp-f" d="M562.49 214.71 A276 276 0 1 1 517.49 130.08 L482.82 157.17 A232 232 0 1 0 520.65 228.31 Z" fill="url(#spwood)"/><path d="M562.49 214.71 A276 276 0 1 1 517.49 130.08 L482.82 157.17 A232 232 0 1 0 520.65 228.31 Z" fill="url(#spshine)" pointer-events="none"/><g class="sp-b"><circle cx="69.8" cy="407.3" r="13.5"/><text x="69.8" y="411.3" text-anchor="middle">01</text></g></g><g class="sp-g" id="spg2" data-i="1"><path class="sp-f" d="M80.13 307.68 A220 220 0 1 1 96.02 382.41 L136.82 365.93 A176 176 0 1 0 124.11 306.14 Z" fill="url(#spwood)"/><path d="M80.13 307.68 A220 220 0 1 1 96.02 382.41 L136.82 365.93 A176 176 0 1 0 124.11 306.14 Z" fill="url(#spshine)" pointer-events="none"/><g class="sp-b"><circle cx="493.7" cy="258.8" r="13.5"/><text x="493.7" y="262.8" text-anchor="middle">02</text></g></g><g class="sp-g" id="spg3" data-i="2"><path class="sp-f" d="M400.97 170.77 A164 164 0 1 1 350.68 144.03 L337.08 185.87 A120 120 0 1 0 373.88 205.44 Z" fill="url(#spwood)"/><path d="M400.97 170.77 A164 164 0 1 1 350.68 144.03 L337.08 185.87 A120 120 0 1 0 373.88 205.44 Z" fill="url(#spshine)" pointer-events="none"/><g class="sp-b"><circle cx="229.0" cy="423.0" r="13.5"/><text x="229.0" y="427.0" text-anchor="middle">03</text></g></g><g class="sp-g" id="spg4" data-i="3"><path class="sp-f" d="M242.77 391.59 A108 108 0 1 1 277.55 405.64 L286.69 362.60 A64 64 0 1 0 266.09 354.28 Z" fill="url(#spwood)"/><path d="M242.77 391.59 A108 108 0 1 1 277.55 405.64 L286.69 362.60 A64 64 0 1 0 266.09 354.28 Z" fill="url(#spshine)" pointer-events="none"/><g class="sp-b"><circle cx="317.9" cy="215.9" r="13.5"/><text x="317.9" y="219.9" text-anchor="middle">04</text></g></g><g class="sp-g" id="spg5" data-i="4"><circle class="sp-f" cx="300" cy="300" r="52" fill="url(#spwood)"/><circle cx="300" cy="300" r="52" fill="url(#spshine)" pointer-events="none"/><g class="sp-b"><circle cx="300.0" cy="300.0" r="13.5"/><text x="300.0" y="304.0" text-anchor="middle">05</text></g></g></svg></div><ol class="sp-list"><li data-i="0"><span class="n">01</span><div><h3>Entegre Üretim Tesisi</h3><p>Bitmiş kapıdan imalat için gereken A'dan Z'ye tüm ahşap komponentlere (kasa, pervaz, seren, profil) ve masif panele kadar tüm süreçleri kendi bünyemizde yönetiyoruz.</p></div></li><li data-i="1"><span class="n">02</span><div><h3>Kendi Preslerimizde Yüzey Üretimi</h3><p>Melamin kapı yüzeylerini kendi bünyemizde presleyerek üretiyoruz. Hem kendi kapılarımızda sağlam ve kaliteli bir yüzey elde ediyor hem de üreticiler için boyanabilir ve desenli yüzey plakaları hazırlıyoruz.</p></div></li><li data-i="2"><span class="n">03</span><div><h3>EI 30 Sertifikalı Güvenlik</h3><p>TS EN 1634-1 standardına uygun olarak akredite laboratuvarda test edilmiş, yangın ve duman sızdırmazlığı belgelenmiş teknik kapılar.</p></div></li><li data-i="3"><span class="n">04</span><div><h3>Titiz Kalite Kontrol Disiplini</h3><p>Hammadde kabulünden hassas ebatlama ve paketlemeye kadar her adımda uygulanan denetimlerle yüksek mukavemet ve uzun ömür garantisi.</p></div></li><li data-i="4"><span class="n">05</span><div><h3>Doğrudan Üretici Çözüm Ortaklığı</h3><p>Aracısız, şeffaf ve teknik odaklı iletişim. Mimari ofisler ve proje yöneticileri için doğrudan fabrika desteği ve esnek üretim kabiliyeti.</p></div></li></ol></div>
+  </div>
+</section>
+
+
+</main>
+
+<footer>
+  <div class="in">
+    <div>
+      <div class="logos"><span><img src="assets/logo.png" alt="SNL DOOR"></span><span><img src="assets/snlpan.png" alt="SNL PAN"></span></div>
+      <p>Şeneller Orman Ürünleri<br>Reis, 2. Sokak No:6/10<br>42560 Organize Sanayi Bölgesi, Akşehir / Konya</p>
+    </div>
+    <div>
+      <h4>Ürünler</h4>
+      <a href="melamin-kapilar.html">Melamin Kapılar</a>
+      <a href="pvc-kapilar.html">PVC Kapılar</a>
+      <a href="lake-kapilar.html">Lake Kapılar</a>
+      <a href="yangina-dayanimli-kapilar.html">Yangına Dayanımlı Kapılar</a>
+      <a href="snl-pan.html">Masif Panel</a>
+    </div>
+    <div>
+      <h4>Kurumsal</h4>
+      <a href="kurumsal.html">Hakkımızda</a>
+      <a href="melamin-yuzey-yari-mamul.html">Melamin Yüzey ve Kapı Komponentleri</a>
+      <a href="iletisim.html">İletişim</a>
+      <a href="tel:+903328121300">0 332 812 13 00</a>
+      <a href="mailto:info@senellergrup.com">info@senellergrup.com</a>
+    </div>
+    <div class="bot"><span>© 2026 Şeneller Orman Ürünleri. Tüm hakları saklıdır.</span><a href="gizlilik.html">Gizlilik ve Çerez Bilgilendirmesi</a></div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/site.js"></script>
+<script src="assets/i18n.js"></script>
+<script src="assets/yuzey.js"></script>
+<script>
+/* giriş sahnesi: 3 varyant (?intro=1 ortadan açılan kapı, 2 aşağıdan yukarı perde, 3 ışık çizgisiyle açılan aralık, ?intro=0 kapalı).
+   Varsayılan 1, her yenilemede çalışır. Video ve slogan, aralığın açıldığı anda başlar. */
+(function(){
+  var hero=document.querySelector('.hero'), vid=document.getElementById('hero-vid'); if(!hero||!vid||!hero.animate) return;
+  var nm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var m=location.search.match(/intro=(\d)/), q=m?m[1]:null; if(q==='0'||nm) return;
+  /* yalnızca sayfa yenilenince veya siteye ilk girişte; site içinden Anasayfa'ya tıklanınca çalışmaz */
+  if(q===null){
+    var nt=''; try{ nt=performance.getEntriesByType('navigation')[0].type; }catch(e){}
+    var internal=false; try{ internal=!!document.referrer&&document.referrer.indexOf(location.origin)===0&&location.origin!=='null'; }catch(e){}
+    var flag=false; try{ var ft=+sessionStorage.getItem('snl-nav')||0; flag=Date.now()-ft<6000; sessionStorage.removeItem('snl-nav'); }catch(e){}
+    if(nt==='back_forward') return;
+    if(nt!=='reload' && (internal||flag)) return;
+  }
+  var v=+q; if(!(v>=1&&v<=3)) v=1;
+  window.__introHold=true;
+  var BG='#0d0e15', GL='0 0 18px 2px rgba(232,138,132,.55),0 0 2px 1px rgba(255,255,255,.9)';
+  var ov=document.createElement('div'); ov.setAttribute('aria-hidden','true');
+  ov.style.cssText='position:absolute;inset:0;z-index:6;pointer-events:none;overflow:hidden';
+  function box(css){ var d=document.createElement('div'); d.style.cssText='position:absolute;'+css; ov.appendChild(d); return d; }
+  function guard(){ if(window.__introHold){ try{ vid.pause(); }catch(e){} } }
+  vid.addEventListener('play',guard); vid.addEventListener('playing',guard); guard();
+  try{ vid.currentTime=0; }catch(e){}
+  var done=false;
+  function release(){
+    if(done) return; done=true; window.__introHold=false;
+    vid.removeEventListener('play',guard); vid.removeEventListener('playing',guard);
+    try{ var pr=vid.play(); if(pr&&pr.catch) pr.catch(function(){}); }catch(e){}
+  }
+  function end(){ release(); if(ov.parentNode) ov.parentNode.removeChild(ov); }
+  var EASE='cubic-bezier(.76,0,.2,1)', fin={fill:'forwards'};
+  function A(el,kf,o){ o.fill='forwards'; return el.animate(kf,o); }
+  hero.appendChild(ov);
+  if(v===2){
+    var P=box('inset:0;background:'+BG+';will-change:transform');
+    var E=box('left:0;right:0;bottom:0;height:2px;background:#fff;box-shadow:'+GL);
+    P.appendChild(E); E.style.position='absolute';
+    var a=A(P,[{transform:'translateY(0)'},{transform:'translateY(-101%)'}],{duration:820,easing:EASE,delay:60});
+    setTimeout(release,300); a.onfinish=end;
+  } else {
+    var L=box('left:0;top:0;bottom:0;width:50.3%;background:'+BG+';will-change:transform');
+    var R=box('right:0;top:0;bottom:0;width:50.3%;background:'+BG+';will-change:transform');
+    var el=box('left:50%;top:0;bottom:0;width:2px;margin-left:-1px;background:#fff;box-shadow:'+GL+';transform:scaleY(0)');
+    var tl=v===3?420:300, od=v===3?820:660;
+    if(v===3){
+      [['right:0','-1px'],['left:0','1px']].forEach(function(c,i){ var e=document.createElement('div'); e.style.cssText='position:absolute;top:0;bottom:0;width:2px;background:#fff;box-shadow:'+GL+';'+c[0]; (i?R:L).appendChild(e); });
+      A(vid,[{transform:'scale(1.12)'},{transform:'scale(1)'}],{duration:1500,easing:'cubic-bezier(.2,.7,.2,1)',delay:tl-40});
+    }
+    A(el,[{transform:'scaleY(0)'},{transform:'scaleY(1)'}],{duration:tl,easing:'cubic-bezier(.5,0,.2,1)'});
+    A(el,[{opacity:1},{opacity:0}],{duration:120,delay:tl+(v===3?0:20)});
+    var d=A(L,[{transform:'translateX(0)'},{transform:'translateX(-101%)'}],{duration:od,easing:EASE,delay:tl});
+    A(R,[{transform:'translateX(0)'},{transform:'translateX(101%)'}],{duration:od,easing:EASE,delay:tl});
+    setTimeout(release,tl+110); d.onfinish=end;
+  }
+  setTimeout(end,2200);
+})();
+</script>
+
+<script>
+/* hero sloganı: kapının açılmaya başladığı ana eşlenik açılır. Video yazı için baştan başlatılır, böylece bekleme olmaz */
+(function(){
+  var p=document.querySelector('.hero-slogan p'); if(!p) return;
+  var vid=document.getElementById('hero-vid'), T0=.35, ready=false, fired=false, armed=false, iv=null, txt=p.textContent;
+  var noMotion=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function go(){ if(fired) return; fired=true; clearInterval(iv); p.classList.add('go'); }
+  function tick(){
+    if(fired||!ready||window.__introHold) return;
+    if(!vid||noMotion){ go(); return; }
+    if(!armed&&vid.readyState>=2){ armed=true; try{ if(vid.currentTime>.35) vid.currentTime=0; var pr=vid.play(); if(pr&&pr.catch) pr.catch(function(){ go(); }); }catch(e){ go(); } }
+    if(armed&&!vid.paused&&vid.currentTime>=T0) go();
+  }
+  function fontsOk(){ ready=true; }
+  iv=setInterval(tick,30);
+  setTimeout(go,2200);
+  if(document.fonts&&document.fonts.load){
+    Promise.all([document.fonts.load('500 80px "Cormorant Garamond"',txt),document.fonts.ready]).then(fontsOk,fontsOk);
+  } else fontsOk();
+})();
+</script>
+
+<script>
+(function(){
+
+  /* Video hızı */
+  var vid = document.getElementById('hero-vid') || document.querySelector('video');
+  if(vid) vid.playbackRate = .92;
+  /* Video: tarayıcı sayfa dışındayken durdurursa, tekrar görünür olduğunda kendiliğinden devam eder */
+  if(vid){
+    var heroIn=true, kickT=null;
+    function kick(){ if(heroIn && !window.__introHold && !document.hidden && vid.paused){ var pr=vid.play(); if(pr&&pr.catch) pr.catch(function(){}); } }
+    function kickSoon(){ clearTimeout(kickT); kickT=setTimeout(kick,120); }
+    if('IntersectionObserver' in window){
+      new IntersectionObserver(function(es){ heroIn=es[0].isIntersecting; if(heroIn) kickSoon(); },{threshold:[0,.1]}).observe(vid);
+    }
+    vid.addEventListener('pause',function(){ if(heroIn&&!document.hidden) kickSoon(); });
+    vid.addEventListener('stalled',kickSoon); vid.addEventListener('suspend',kickSoon);
+    document.addEventListener('visibilitychange',kickSoon);
+    window.addEventListener('focus',kickSoon); window.addEventListener('pageshow',kickSoon);
+    window.addEventListener('scroll',kickSoon,{passive:true});
+    document.addEventListener('pointerdown',kick,{passive:true}); document.addEventListener('touchstart',kick,{passive:true});
+    setInterval(kick,3000);
+  }
+
+  /* Geri-al butonu */
+  var btt = document.getElementById('btt');
+  if(btt){
+    window.addEventListener('scroll', function(){
+      btt.classList.toggle('vis', window.scrollY > 600);
+    }, {passive:true});
+    btt.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+  /* Kapı şeridi - ok butonları */
+  var rail = document.getElementById('door-rail');
+  var rprev = document.getElementById('rail-prev');
+  var rnext = document.getElementById('rail-next');
+  if(rail && rprev && rnext){
+    function railStep(){
+      var slide = rail.querySelector('.door-slide');
+      var gap = parseFloat(getComputedStyle(rail).columnGap || getComputedStyle(rail).gap || 20) || 20;
+      return slide ? slide.offsetWidth + gap : rail.clientWidth * 0.8;
+    }
+    function railSync(){
+      var max = rail.scrollWidth - rail.clientWidth - 4;
+      rprev.disabled = rail.scrollLeft <= 4;
+      rnext.disabled = rail.scrollLeft >= max;
+    }
+    rprev.addEventListener('click', function(){ rail.scrollBy({left:-railStep(), behavior:'smooth'}); });
+    rnext.addEventListener('click', function(){ rail.scrollBy({left: railStep(), behavior:'smooth'}); });
+    rail.addEventListener('scroll', railSync, {passive:true});
+    window.addEventListener('resize', railSync);
+    railSync();
+  }
+
+  /* ── Yangın kapısı: kapı solda sabit, her katman sırayla kapıdan çıkıp sağında yaklaşır ── */
+  (function(){
+    var door=document.getElementById('fd-door');
+    if(!door) return;
+    var scene=document.getElementById('fd-scene'),
+        numEl=document.getElementById('fd-num'),
+        titleEl=document.getElementById('fd-title'),
+        descEl=document.getElementById('fd-desc'),
+        specEl=document.getElementById('fd-spec'),
+        prevB=document.getElementById('fd-prev'),
+        nextB=document.getElementById('fd-next'),
+        dots=[].slice.call(document.querySelectorAll('#fd-tabs .fd-tab'));
+    var comps=['fdc-skin','fdc-seren','fdc-core','fdc-pervaz','fdc-giyotin'].map(function(id){return document.getElementById(id);});
+    var STEPS=[
+      {n:'01',t:'Kapı Yüzeyi',d:"Teknik kanadın dış yüzeyini oluşturan yüksek yoğunluklu levha. Yangın geciktirici melamin, poliüretan lake veya PVC yüzey seçenekleriyle yangın güvenliğini mimari tasarımla buluşturur.",s:'Melamin · Lake · PVC'},
+      {n:'02',t:'Kapı sereni',d:"Kanat formunu sabitleyen, eğilmeyi önleyen ve yalıtım çekirdeğini çevreleyen masif ahşap iç iskelet.",s:'Ahşap sereni'},
+      {n:'03',t:'Mineral çekirdek',d:"EI 30 standardının gerektirdiği yüksek ısı yalıtımını sağlayan, alev ve duman geçişini geciktiren özel mineral kompozit dolgu.",s:'EI 30 · E 30'},
+      {n:'04',t:'Pervaz ve Yangın Duman Fitili',d:"Kasa kanalında yer alan özel fitil, yangın esnasında ısıyla kabararak kapı ile kasa arasındaki boşluğu kapatır; alev ve zehirli dumanın geçişini önler.",s:'48 mm MDF kasa · duman fitilli'},
+      {n:'05',t:'Giyotin',d:"Kapı kapandığı anda otomatik olarak zemine inerek alt açıklığı kapatan mekanik akustik ve duman giyotini.",s:'Giyotin · otomatik kapatıcı · yaprak menteşe'}
+    ];
+    var _T=window.SNL_T||function(x){ return x; };
+    STEPS.forEach(function(st){ st.t=_T(st.t); st.d=_T(st.d); st.s=_T(st.s); });
+    var N=STEPS.length, YAW=-22;
+    var reduceM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function wide(){ return window.matchMedia('(min-width:861px)').matches; }
+
+    // dinlenme derinliği, çıkış ölçeği, çıkışta yaklaşma (px), katman genişliğinin kapıya farkı (px)
+    var LY=[
+      {z:7, sc:1.15, dz:40, dw:0},
+      {z:4, sc:1.20, dz:40, dw:0},
+      {z:0, sc:1.45, dz:50, dw:-48},
+      {z:-4,sc:1.00, dz:30, dw:36},
+      {z:3, sc:2.00, dz:40, dw:-8}
+    ];
+    var W=200, scEff=[1,1,1,1,1], GAP=64;
+    function measure(){
+      W=door.offsetWidth||200;
+      var sceneW=scene.clientWidth, pad=parseFloat(getComputedStyle(scene).paddingLeft)||0;
+      LY.forEach(function(L,j){
+        var Wl=W+L.dw;
+        var room=sceneW-8-pad-W/2-0.93*(W/2+GAP);
+        var sc=room/(Wl*1.02);
+        scEff[j]=Math.max(.75,Math.min(L.sc,sc));
+      });
+    }
+
+    var prog=0, popOn=false, tx=0, ty=0, step=-1, running=false;
+    var cur={tx:0,ty:0,pop:[0,0,0,0,0]};
+    function lerp(a,b,k){ return a+(b-a)*k; }
+    function apply(){
+      door.style.transform='rotateX('+(3+cur.ty).toFixed(2)+'deg) rotateY('+(YAW+cur.tx).toFixed(2)+'deg)';
+      comps.forEach(function(el,j){
+        var L=LY[j], p=cur.pop[j], Wl=W+L.dw;
+        var dx=W/2+GAP+Wl*scEff[j]/2;
+        el.style.transform='translateX('+(p*dx).toFixed(1)+'px) translateZ('+(L.z+p*L.dz).toFixed(1)+'px) rotateY('+(p*(-YAW)).toFixed(2)+'deg) scale('+(1+p*(scEff[j]-1)).toFixed(3)+')';
+      });
+    }
+    function frame(){
+      var k=reduceM?1:0.085, moving=false;
+      [['tx',tx],['ty',ty]].forEach(function(kv){
+        var n=lerp(cur[kv[0]],kv[1],k);
+        if(Math.abs(n-kv[1])>0.02) moving=true; else n=kv[1];
+        cur[kv[0]]=n;
+      });
+      for(var j=0;j<N;j++){
+        var want=(j===step&&popOn)?1:0, n2=lerp(cur.pop[j],want,k);
+        if(Math.abs(n2-want)>0.004) moving=true; else n2=want;
+        cur.pop[j]=n2;
+      }
+      apply();
+      if(moving) requestAnimationFrame(frame); else running=false;
+    }
+    function kick(){ if(!running){ running=true; requestAnimationFrame(frame); } }
+
+    function go(i){
+      i=Math.max(0,Math.min(N-1,i));
+      if(i===step) return;
+      step=i;
+      var s=STEPS[i];
+      [numEl,titleEl,descEl,specEl].forEach(function(el){el.classList.add('fd-fade');});
+      setTimeout(function(){
+        numEl.textContent=s.n; titleEl.textContent=s.t; descEl.textContent=s.d; specEl.textContent=s.s;
+        [numEl,titleEl,descEl,specEl].forEach(function(el){el.classList.remove('fd-fade');});
+      },180);
+      comps.forEach(function(el,j){ el.classList.toggle('act',j===i&&popOn); });
+      dots.forEach(function(d,di){d.classList.toggle('on',di===i);});
+      prevB.disabled=(i===0); nextB.disabled=(i===N-1);
+      kick();
+    }
+    function setPop(v){
+      if(v===popOn) return; popOn=v;
+      comps.forEach(function(el,j){ el.classList.toggle('act',j===step&&popOn); });
+      kick();
+    }
+
+    var scroll=document.getElementById('fd-scroll'), section=document.getElementById('firedoor');
+    function pinOn(){ return !!scroll && wide() && !reduceM; }
+    function syncPin(){ section.classList.toggle('no-pin', !pinOn()); }
+    function onScroll(){
+      if(!pinOn()) return;
+      var total=scroll.offsetHeight-window.innerHeight; if(total<=0) return;
+      prog=Math.min(1,Math.max(0,-scroll.getBoundingClientRect().top/total));
+      go(Math.min(N-1,Math.floor(prog*N)));
+      setPop(prog>0.02);                       // en başta kapı bütün, hafif kaydırınca ilk katman çıkar
+    }
+    function scrollToStep(i){
+      i=Math.max(0,Math.min(N-1,i));
+      if(!pinOn()){ go(i); setPop(true); return; }
+      var total=scroll.offsetHeight-window.innerHeight;
+      var absTop=scroll.getBoundingClientRect().top+window.scrollY;
+      window.scrollTo({top:absTop+((i+0.5)/N)*total, behavior:'smooth'});
+    }
+    prevB.addEventListener('click',function(){scrollToStep(step-1);});
+    nextB.addEventListener('click',function(){scrollToStep(step+1);});
+    dots.forEach(function(d){d.addEventListener('click',function(){scrollToStep(+d.getAttribute('data-go'));});});
+
+    if(!reduceM){
+      scene.parentNode.addEventListener('mousemove',function(e){
+        var r=scene.getBoundingClientRect();
+        tx=((e.clientX-r.left)/r.width-.5)*5; ty=(.5-(e.clientY-r.top)/r.height)*4; kick();
+      });
+      scene.parentNode.addEventListener('mouseleave',function(){ tx=0; ty=0; kick(); });
+    }
+
+    window.addEventListener('scroll', onScroll, {passive:true});
+    window.addEventListener('resize', function(){ syncPin(); measure(); onScroll(); kick(); });
+    syncPin(); measure(); go(0);
+    if(pinOn()){ onScroll(); } else { setPop(true); }
+    apply();
+  })();
+
+  /* ── Neden Biz: ahşap halkalar sağdan, soldan ve üstten sırayla gelip birleşir ── */
+  (function(){
+    var sp=document.getElementById('sp'); if(!sp) return;
+    var gs=[].slice.call(sp.querySelectorAll('.sp-g')), lis=[].slice.call(sp.querySelectorAll('.sp-list li'));
+    var board=sp.querySelector('.sp-board');
+    var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var FROM=[[560,40,22],[-560,70,-28],[20,-560,34],[480,-340,-38],[-470,-300,46]];
+    var started=false, finT=null;
+    function showAll(){ sp.classList.add('on'); lis.forEach(function(l){ l.classList.add('in'); }); gs.forEach(function(g){ g.getAnimations&&g.getAnimations().forEach(function(a){ try{ a.finish(); }catch(e){} }); g.style.opacity=1; }); }
+    function begin(){
+      if(started) return; started=true;
+      if(reduce||!gs[0].animate){ showAll(); return; }
+      sp.classList.add('on');
+      gs.forEach(function(g,i){
+        var f=FROM[i];
+        g.animate([{transform:'translate('+f[0]+'px,'+f[1]+'px) rotate('+f[2]+'deg)',opacity:0},{opacity:1,offset:.22},{transform:'none',opacity:1}],{duration:780,delay:i*230,easing:'cubic-bezier(.2,.8,.25,1)',fill:'forwards'});
+        setTimeout(function(){ lis[i].classList.add('in'); },i*230+540);
+      });
+      finT=setTimeout(showAll,780+4*230+900);
+    }
+    function check(){
+      if(started) return;
+      var r=board.getBoundingClientRect(), vh=window.innerHeight||800;
+      if(r.top<vh*.85&&r.bottom>vh*.1) begin();
+    }
+    if('IntersectionObserver' in window){ new IntersectionObserver(function(es){ if(es[0].isIntersecting) begin(); },{threshold:[0,.2]}).observe(board); }
+    window.addEventListener('scroll',check,{passive:true}); window.addEventListener('resize',check); window.addEventListener('load',function(){ setTimeout(check,300); });
+    check();
+    function hot(i,on){ if(gs[i]) gs[i].classList.toggle('hot',on); if(lis[i]) lis[i].classList.toggle('hot',on); }
+    gs.forEach(function(g,i){ g.addEventListener('pointerenter',function(){ hot(i,true); }); g.addEventListener('pointerleave',function(){ hot(i,false); }); });
+    lis.forEach(function(l,i){ l.addEventListener('pointerenter',function(){ hot(i,true); }); l.addEventListener('pointerleave',function(){ hot(i,false); }); });
+  })();
+
+})();
+</script>
+
+</body>
+</html>

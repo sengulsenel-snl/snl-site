@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<script>(function(){try{var l=localStorage.getItem('snl-lang');if(l==='en'||l==='ar'){var h=document.documentElement;h.lang=l;if(l==='ar'){h.dir='rtl';var k=document.createElement('link');k.rel='stylesheet';k.href='https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600&display=swap';document.head.appendChild(k);}}}catch(e){}})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>İletişim | Şeneller Orman Ürünleri, Akşehir OSB Konya</title>
+<meta name="description" content="Şeneller Orman Ürünleri iletişim, adres ve harita: Reis, 2. Sokak No:6/10, Akşehir OSB, Konya. Kapı ve masif panel için Türkiye, Antalya ve İç Anadolu'dan ulaşın.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Şeneller Orman Ürünleri · SNL DOOR">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:title" content="İletişim | Şeneller Orman Ürünleri, Akşehir OSB Konya">
+<meta property="og:description" content="Şeneller Orman Ürünleri iletişim, adres ve harita: Reis, 2. Sokak No:6/10, Akşehir OSB, Konya. Kapı ve masif panel için Türkiye, Antalya ve İç Anadolu'dan ulaşın.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Azeret+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+
+<style>
+/* ===== İLETİŞİM: sade ve iletişim odaklı; kelimeler LED gibi basamak basamak gelir ===== */
+.cs{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:start;padding-top:clamp(32px,5vw,64px)}
+.cs-left{min-width:0;max-width:560px}
+.cs-left .ct-l{font-size:11px}
+.cs-left .ct-h{font-size:clamp(26px,2.6vw,36px);line-height:1.1;letter-spacing:-.02em;margin:10px 0 0}
+.cs-left .ct-lead{font-size:15.5px;line-height:1.6;max-width:44ch;margin:12px 0 clamp(22px,3vw,32px)}
+.cs-loc{margin-bottom:clamp(22px,3vw,34px)}
+.cs-loc .ct-addr{font-size:15px;line-height:1.6;margin-top:8px}
+.cs-map{margin-top:14px;height:clamp(240px,22vw,300px);border-radius:10px;overflow:hidden;background:var(--navy-2)}
+.cs-map iframe{width:100%;height:100%;border:0;display:block;filter:saturate(.72) sepia(.14)}
+.cs-loc .ct-pill{margin-top:12px;padding:2px 24px 2px 0;border-radius:0;border:0;border-bottom:1px solid rgba(46,37,33,.35);background:none;color:#2e2521;font-size:13px;font-weight:500}
+.cs-loc .ct-pill svg{right:0;width:15px;height:15px;margin-top:-7px}
+.cs-loc .ct-pill:hover{background:none;color:var(--gold);border-bottom-color:var(--gold)}
+.cs-left .ct-ways{border-top:1px solid rgba(46,37,33,.14)}
+.cs-left .ct-way{grid-template-columns:92px minmax(0,1fr) auto;padding:14px 0;border-bottom:1px solid rgba(46,37,33,.14)}
+.cs-left .ct-way:hover{padding-left:6px}
+.cs-left .ct-wl{font-size:11px}
+.cs-left .ct-wv{font-size:clamp(17px,1.5vw,20px);font-weight:400;letter-spacing:-.005em;line-height:1.3}
+.cs-left .ct-way svg{width:18px;height:18px}
+.cs-right{margin:0;min-width:0}
+.cs-frame{height:min(68vh,560px);min-height:300px}
+.cs-right.kur-fx img{aspect-ratio:auto;height:100%}
+
+/* aşağıdan yukarı yumuşak çıkış */
+.w{display:inline-block;white-space:pre}
+html.ledjs .w{opacity:0}
+.cs-g.go .w{animation:riseIn 1.15s cubic-bezier(.16,1,.3,1) both;animation-delay:calc(var(--d) * 1ms)}
+@keyframes riseIn{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:none}}
+html.ledjs .ct-ways .ct-way{opacity:0}
+.ct-ways.go .ct-way{animation:rowRise 1.1s cubic-bezier(.16,1,.3,1) both;animation-delay:calc(var(--r) * 200ms)}
+@keyframes rowRise{from{opacity:0;transform:translateY(38px)}to{opacity:1;transform:none}}
+@media(max-width:860px){.cs{grid-template-columns:1fr}.cs-left{max-width:none}.cs-right{position:static}.cs-frame{height:auto;min-height:0}.cs-right.kur-fx img{aspect-ratio:16/10;height:auto}}
+@media(prefers-reduced-motion:reduce){html.ledjs .w,html.ledjs .ct-ways .ct-way{opacity:1}.cs-g.go .w,.ct-ways.go .ct-way{animation:none}}
+
+/* ===== HUD (açık tema): ince ızgara, imleci izleyen ışık, teknik çerçeve ===== */
+.ct.hud{--mx:70%;--my:25%;position:relative;background-color:#f6f1e8;
+  background-image:radial-gradient(540px circle at var(--mx) var(--my),rgba(253,198,179,.30),rgba(253,198,179,0) 62%),linear-gradient(180deg,#f9f5ee 0%,#f2eadc 100%)}
+.hud .cs-map{background:var(--navy-2)}
+.hud .cs-left .ct-ways{border-top:1px solid rgba(46,37,33,.12)}
+.hud .cs-left .ct-way{position:relative;border-bottom:1px solid rgba(46,37,33,.09)}
+.hud .ct-way::after{content:"";position:absolute;left:0;bottom:-1px;height:1px;width:100%;background:#2e2521;transform:scaleX(0);transform-origin:left;transition:transform 1.3s cubic-bezier(.22,1,.36,1)}
+.hud .ct-ways.go .ct-way::after{transform:scaleX(1);transition-delay:calc(var(--r) * 260ms)}
+.hud .ct-way::before{content:"";position:absolute;left:-14px;top:50%;width:3px;height:0;background:var(--gold);box-shadow:0 0 10px rgba(185,28,28,.55);transform:translateY(-50%);transition:height .35s cubic-bezier(.22,1,.36,1)}
+.hud .ct-way:hover::before{height:60%}
+/* fotoğraf çerçevesi */
+.hud-frame{box-shadow:inset 0 0 0 1px rgba(244,232,215,.14)}
+.kur-fx.in .kur-fx.in .hud-c{position:absolute;width:26px;height:26px;pointer-events:none;border:0 solid #f4e8d7;opacity:0;transform:scale(.4);transition:opacity .7s ease,transform .9s cubic-bezier(.22,1,.36,1)}
+.hud-c.tl{left:14px;top:14px;border-top-width:1.5px;border-left-width:1.5px;transform-origin:0 0}
+.hud-c.tr{right:14px;top:14px;border-top-width:1.5px;border-right-width:1.5px;transform-origin:100% 0}
+.hud-c.bl{left:14px;bottom:14px;border-bottom-width:1.5px;border-left-width:1.5px;transform-origin:0 100%}
+.hud-c.br{right:14px;bottom:14px;border-bottom-width:1.5px;border-right-width:1.5px;transform-origin:100% 100%}
+.kur-fx.in .hud-c{opacity:.85;transform:none;transition-delay:.9s}
+@media(prefers-reduced-motion:reduce){.hud-c{opacity:.85;transform:none;transition:none}}
+
+
+@keyframes ctCaret{50%{opacity:0}}
+/* ürün şeridi: yalın ve yavaş akış */
+.tk{border-bottom:1px solid rgba(46,37,33,.1);font-size:13.5px;letter-spacing:.04em;color:rgba(46,37,33,.78)}
+.tk-view{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.tk-track{display:flex;align-items:center;width:max-content;animation:tkMove 110s linear infinite}
+.tk:hover .tk-track{animation-play-state:paused}
+.tk-track a{padding:15px 26px;white-space:nowrap;color:inherit;transition:color .3s}
+.tk-track a:hover{color:var(--gold)}
+.tk-track i{font-style:normal;color:rgba(46,37,33,.35)}
+@keyframes tkMove{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.tk-track{animation:none}}
+/* harita: firma adı etiketi */
+.cs-map{position:relative}
+.cs-maptag{position:absolute;left:12px;bottom:12px;display:inline-flex;align-items:center;gap:8px;background:#fff;color:#2e2521;font-size:12.5px;font-weight:600;letter-spacing:.01em;padding:8px 14px 8px 12px;border-radius:999px;box-shadow:0 6px 18px rgba(46,37,33,.16);pointer-events:none}
+.cs-maptag::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gold)}
+</style>
+</head>
+<body>
+<header class="hdr">
+  <div class="in">
+    <a class="brand" href="index.html" aria-label="Ana sayfa">
+      <span class="logo"><img src="assets/logo.png" alt="SNL DOOR"></span>
+      <span class="co">Şeneller<br>Orman Ürünleri</span>
+    </a>
+    <nav class="nav" aria-label="Ana menü">
+      <a href="index.html">Anasayfa</a>
+      <a href="kurumsal.html">Kurumsal</a>
+      <div class="dd">
+        <button type="button" aria-haspopup="true">Kapılar <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M1 3l4 4 4-4"/></svg></button>
+        <div class="menu">
+          <span class="menu-brand">SNL DOOR</span>
+          <a href="melamin-kapilar.html" data-img="assets/roma.jpg">Melamin Kapılar</a>
+          <a href="pvc-kapilar.html" data-img="assets/pvc-06.jpg">PVC Kapılar</a>
+          <a href="lake-kapilar.html" data-img="assets/lake-01.jpg">Lake Kapılar</a>
+          <a href="yangina-dayanimli-kapilar.html" class="fire" data-img="assets/teak.jpg">Yangına Dayanımlı Kapılar</a>
+          <div class="menu-pv" aria-hidden="true"><img alt=""></div>
+        </div>
+      </div>
+      <a href="snl-pan.html">Masif Panel</a>
+      <a href="melamin-yuzey-yari-mamul.html">Melamin Yüzey ve Kapı Komponentleri</a>
+      <a href="iletisim.html" class="on">İletişim</a>
+    </nav>
+    <div class="hdr-r">
+      <div class="lang" role="group" aria-label="Dil seçimi">
+        <button type="button" class="lang-b on" data-lang="tr" aria-pressed="true" title="Türkçe">TR</button>
+        <button type="button" class="lang-b" data-lang="en" aria-pressed="false" title="English">EN</button>
+        <button type="button" class="lang-b" data-lang="ar" aria-pressed="false" title="العربية">AR</button>
+      </div>
+      <button class="burger" id="burger" type="button" aria-label="Menüyü aç" aria-expanded="false"><i></i></button>
+    </div>
+  </div>
+</header>
+<div class="mnav" id="mnav">
+  <a href="index.html">Anasayfa</a>
+  <a href="kurumsal.html">Kurumsal</a>
+  <a href="melamin-kapilar.html">Kapılar</a>
+  <div class="sub"><span class="sub-brand">SNL DOOR</span><a href="melamin-kapilar.html">Melamin Kapılar</a><a href="pvc-kapilar.html">PVC Kapılar</a><a href="lake-kapilar.html">Lake Kapılar</a><a href="yangina-dayanimli-kapilar.html" class="fire">Yangına Dayanımlı Kapılar</a></div>
+  <a href="snl-pan.html">Masif Panel</a>
+  <a href="melamin-yuzey-yari-mamul.html">Melamin Yüzey ve Kapı Komponentleri</a>
+  <a href="iletisim.html">İletişim</a>
+</div>
+<main class="ct hud" id="hud">
+<div class="tk" aria-label="Ürünlerimiz"><div class="tk-view"><div class="tk-track"><a href="melamin-kapilar.html">Melamin Kapı</a><i aria-hidden="true">·</i><a href="lake-kapilar.html">Lake Kapı</a><i aria-hidden="true">·</i><a href="pvc-kapilar.html">PVC Kapı</a><i aria-hidden="true">·</i><a href="melamin-yuzey-yari-mamul.html">Kapı Sereni</a><i aria-hidden="true">·</i><a href="melamin-yuzey-yari-mamul.html">Kapı Kasası</a><i aria-hidden="true">·</i><a href="melamin-yuzey-yari-mamul.html">Pervaz</a><i aria-hidden="true">·</i><a href="melamin-yuzey-yari-mamul.html">Melamin Kapı Yüzeyi</a><i aria-hidden="true">·</i><a href="melamin-kapilar.html">Melamin Kapı</a><i aria-hidden="true">·</i><a href="lake-kapilar.html">Lake Kapı</a><i aria-hidden="true">·</i><a href="pvc-kapilar.html">PVC Kapı</a><i aria-hidden="true">·</i><a href="melamin-yuzey-yari-mamul.html">Kapı Sereni</a><i aria-hidden="true">·</i><a href="melamin-yuzey-yari-mamul.html">Kapı Kasası</a><i aria-hidden="true">·</i><a href="melamin-yuzey-yari-mamul.html">Pervaz</a><i aria-hidden="true">·</i><a href="melamin-yuzey-yari-mamul.html">Melamin Kapı Yüzeyi</a><i aria-hidden="true">·</i></div></div></div>
+<section><div class="wrap cs">
+  <div class="cs-left">
+    <div class="cs-g cs-head">
+      <h1 class="ct-h">İletişim</h1>
+      <p class="ct-slogan">Dünyanın ortasından açılan kapı</p>
+    </div>
+
+    <div class="ct-side">
+      <div class="ct-loc cs-loc cs-g">
+        <span class="ct-wl">Adres</span>
+        <address class="ct-addr">Şeneller Orman Ürünleri<br>Reis, 2. Sokak No:6/10<br>42560 Organize Sanayi Bölgesi, Akşehir / Konya</address>
+        <div class="cs-map"><div class="cs-leaf" id="cs-leaf" role="img" aria-label="Akşehir OSB girişinden fabrikaya rota"></div><span class="cs-maptag">Şeneller Orman Ürünleri</span></div>
+        <a class="ct-pill" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=38.30745557503927,31.607398551451197">Haritada aç<svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5"/></svg></a>
+      </div>
+
+      <div class="ct-ways cs-g">
+        <a class="ct-way" style="--r:0" href="tel:+903328121300"><span class="ct-wl">Telefon</span><span class="ct-wv">+90 332 812 13 00</span><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5"/></svg></a>
+        <a class="ct-way" style="--r:1" href="tel:+905322954566"><span class="ct-wl">Cep</span><span class="ct-wv">+90 532 295 45 66</span><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5"/></svg></a>
+        <a class="ct-way" style="--r:2" href="mailto:info@senellergrup.com"><span class="ct-wl">E-posta</span><span class="ct-wv">info@senellergrup.com</span><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <figure class="cs-right kur-fx" id="cs-fx">
+    <div class="kur-frame cs-frame hud-frame">
+      <img class="kur-media" src="assets/fabrika-hava.jpg" alt="Şeneller Orman Ürünleri fabrikası, havadan görünüm" loading="lazy">
+      <span class="kur-shade"></span>
+      <i class="hud-c tl"></i><i class="hud-c tr"></i><i class="hud-c bl"></i><i class="hud-c br"></i>
+    </div>
+  </figure>
+</div></section>
+<div style="height:clamp(56px,8vw,110px)"></div>
+</main>
+<footer>
+  <div class="in">
+    <div>
+      <div class="logos"><span><img src="assets/logo.png" alt="SNL DOOR"></span><span><img src="assets/snlpan.png" alt="SNL PAN"></span></div>
+      <p>Şeneller Orman Ürünleri<br>Reis, 2. Sokak No:6/10<br>42560 Organize Sanayi Bölgesi, Akşehir / Konya</p>
+    </div>
+    <div>
+      <h4>Ürünler</h4>
+      <a href="melamin-kapilar.html">Melamin Kapılar</a>
+      <a href="pvc-kapilar.html">PVC Kapılar</a>
+      <a href="lake-kapilar.html">Lake Kapılar</a>
+      <a href="yangina-dayanimli-kapilar.html">Yangına Dayanımlı Kapılar</a>
+      <a href="snl-pan.html">Masif Panel</a>
+    </div>
+    <div>
+      <h4>Kurumsal</h4>
+      <a href="kurumsal.html">Hakkımızda</a>
+      <a href="melamin-yuzey-yari-mamul.html">Melamin Yüzey ve Kapı Komponentleri</a>
+      <a href="iletisim.html">İletişim</a>
+      <a href="tel:+903328121300">+90 332 812 13 00</a>
+      <a href="mailto:info@senellergrup.com">info@senellergrup.com</a>
+    </div>
+    <div class="bot"><span>© 2026 Şeneller Orman Ürünleri. Tüm hakları saklıdır.</span><a href="gizlilik.html">Gizlilik ve Çerez Bilgilendirmesi</a></div>
+  </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="assets/site.js"></script>
+<script src="assets/i18n.js"></script>
+
+
+<script>
+(function(){
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function clamp(v,a,b){return Math.max(a,Math.min(b,v));}
+
+  // ---- kelimeler: soldan sağa, basamak basamak, LED gibi yanarak ----
+  var groups=[].slice.call(document.querySelectorAll('.cs-g'));
+  function wrap(el,state){
+    [].slice.call(el.childNodes).forEach(function(n){
+      if(n.nodeType===3){
+        var parts=n.textContent.split(/(\s+)/), frag=document.createDocumentFragment();
+        parts.forEach(function(p){
+          if(!p) return;
+          if(/^\s+$/.test(p)){ frag.appendChild(document.createTextNode(' ')); return; }
+          var s=document.createElement('span'); s.className='w'; s.textContent=p;
+          s.style.setProperty('--d',String(Math.round(state.i*38))); state.i++;
+          frag.appendChild(s);
+        });
+        n.parentNode.replaceChild(frag,n);
+      } else if(n.nodeType===1 && n.tagName!=='SVG' && n.tagName!=='IFRAME' && !n.classList.contains('cs-map')){
+        wrap(n,state);
+      }
+    });
+  }
+  if(!reduce){
+    document.documentElement.classList.add('ledjs');
+    groups.forEach(function(g){
+      var st={i:0};
+      [].slice.call(g.querySelectorAll('.ct-l,.ct-h,.ct-lead,.ct-wl,.ct-addr,.ct-wv')).forEach(function(el){ wrap(el,st); });
+      // basamak: sonraki satırların kelimeleri biraz daha geç başlar
+    });
+    if('IntersectionObserver' in window){
+      var io=new IntersectionObserver(function(es){
+        es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('go'); io.unobserve(e.target); } });
+      },{threshold:.2});
+      groups.forEach(function(g){ io.observe(g); });
+    } else groups.forEach(function(g){ g.classList.add('go'); });
+  }
+
+  // ---- fotoğraf: karartmalı açılış ve hafif kayma (Kurumsal ile aynı) ----
+  var fx=document.getElementById('cs-fx');
+  if(fx){
+    var img=fx.querySelector('.kur-media');
+    if(reduce){ fx.classList.add('in'); }
+    else {
+      if('IntersectionObserver' in window){
+        new IntersectionObserver(function(es,io2){ if(es[0].isIntersecting){ fx.classList.add('in'); io2.disconnect(); } },{threshold:.2}).observe(fx);
+      } else fx.classList.add('in');
+      var q=false;
+      var upd=function(){
+        q=false;
+        var r=fx.getBoundingClientRect(), vh=window.innerHeight;
+        var p=clamp((vh-r.top)/(vh+r.height),0,1);
+        img.style.setProperty('--ky',((p-.5)*-40).toFixed(1)+'px');
+      };
+      window.addEventListener('scroll',function(){ if(!q){q=true;requestAnimationFrame(upd);} },{passive:true});
+      window.addEventListener('resize',upd); upd();
+    }
+  }
+
+  // ---- HUD: imleci izleyen ışık ve nişan çizgileri ----
+  var hud=document.getElementById('hud');
+  if(hud && !reduce && matchMedia('(hover:hover) and (pointer:fine)').matches){
+    hud.addEventListener('pointermove',function(e){
+      var r=hud.getBoundingClientRect();
+      hud.style.setProperty('--mx',(e.clientX-r.left)+'px'); hud.style.setProperty('--my',(e.clientY-r.top)+'px');
+    });
+  }
+})();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+/* Akşehir OSB girişinden fabrikaya kırmızı rota animasyonu */
+(function(){
+  var box=document.getElementById('cs-leaf'); if(!box) return;
+  var T=window.SNL_T||function(s){ return s; };
+  var F=[38.30745557503927,31.607398551451197], G=[38.30882926168666,31.61408006314647];
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var map=null, route=null, casing=null, coords=null, lastPlay=0;
+  function fallback(){ box.innerHTML='<iframe src="https://www.google.com/maps?q='+F[0]+','+F[1]+'&z=17&output=embed" title="Map" style="width:100%;height:100%;border:0" loading="lazy"></iframe>'; }
+  function getRoute(cb){
+    var done=false;
+    function direct(){ if(done) return; done=true; cb([G,F]); }
+    var t=setTimeout(direct,6000);
+    var url='https://router.project-osrm.org/route/v1/driving/'+G[1]+','+G[0]+';'+F[1]+','+F[0]+'?overview=full&geometries=geojson';
+    fetch(url).then(function(r){ return r.json(); }).then(function(j){
+      if(done) return;
+      var rt=j&&j.routes&&j.routes[0];
+      if(rt&&rt.distance>200&&rt.distance<3500){
+        done=true; clearTimeout(t);
+        var c=rt.geometry.coordinates.map(function(p){ return [p[1],p[0]]; });
+        cb([G].concat(c,[F]));
+      } else direct();
+    }).catch(direct);
+  }
+  function play(){
+    if(!map||!coords) return;
+    lastPlay=Date.now();
+    box.classList.remove('arrived');
+    if(route){ map.removeLayer(route); map.removeLayer(casing); }
+    casing=L.polyline(coords,{color:'#ffffff',weight:8,opacity:.92,lineCap:'round',lineJoin:'round',interactive:false}).addTo(map);
+    route=L.polyline(coords,{color:'#d4261c',weight:4.5,opacity:1,lineCap:'round',lineJoin:'round',interactive:false}).addTo(map);
+    var p=route.getElement(), q=casing.getElement();
+    if(reduce||!p||!p.getTotalLength){ box.classList.add('arrived'); return; }
+    var len=p.getTotalLength();
+    [p,q].forEach(function(el){ el.style.transition='none'; el.style.strokeDasharray=len; el.style.strokeDashoffset=len; });
+    void p.getBoundingClientRect();
+    [p,q].forEach(function(el){ el.style.transition='stroke-dashoffset 2.8s cubic-bezier(.55,0,.25,1)'; el.style.strokeDashoffset=0; });
+    setTimeout(function(){ [p,q].forEach(function(el){ el.style.transition='none'; el.style.strokeDasharray='none'; }); box.classList.add('arrived'); },2950);
+  }
+  function init(){
+    if(map) return;
+    if(!window.L){ fallback(); return; }
+    map=L.map(box,{zoomControl:false,scrollWheelZoom:false,attributionControl:true,dragging:!L.Browser.mobile,tap:false});
+    var sat=L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{maxZoom:19,attribution:'Tiles &copy; Esri'});
+    var osm=L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap'});
+    sat.addTo(map);
+    map.fitBounds([F,G],{padding:[44,44]});
+    L.control.zoom({position:'topright'}).addTo(map);
+    var lay=L.control({position:'topleft'});
+    lay.onAdd=function(){
+      var d=L.DomUtil.create('div','cs-lay');
+      d.innerHTML='<button type="button" class="on" data-k="sat">'+T('Uydu')+'</button><button type="button" data-k="osm">'+T('Harita')+'</button>';
+      L.DomEvent.disableClickPropagation(d);
+      d.addEventListener('click',function(e){
+        var b=e.target.closest('button'); if(!b) return;
+        if(b.getAttribute('data-k')==='sat'){ map.removeLayer(osm); sat.addTo(map); } else { map.removeLayer(sat); osm.addTo(map); }
+        [].forEach.call(d.querySelectorAll('button'),function(x){ x.classList.toggle('on',x===b); });
+      });
+      return d;
+    };
+    lay.addTo(map);
+    var gate=L.marker(G,{icon:L.divIcon({className:'cs-gate',html:'<i></i>',iconSize:[16,16]}),keyboard:false}).addTo(map);
+    gate.bindTooltip(T('Akşehir OSB girişi'),{permanent:true,direction:'top',offset:[0,-6],className:'cs-tip'});
+    L.marker(F,{icon:L.divIcon({className:'cs-fac',html:'<b></b><i></i>',iconSize:[22,22]}),keyboard:false}).addTo(map);
+        window.addEventListener('resize',function(){ map.invalidateSize(); });
+    getRoute(function(c){ coords=c; if(visible) play(); });
+  }
+  var visible=false, host=box.parentNode;
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){
+      visible=es[0].isIntersecting;
+      if(visible){
+        if(!map) init(); else if(coords && Date.now()-lastPlay>6000) setTimeout(play,350);
+      }
+    },{threshold:.45}).observe(host);
+  } else { visible=true; init(); }
+})();
+</script>
+<script>
+/* cs-par: harita kartı kaydırmayla birlikte hafifçe hareket eder */
+(function(){
+  var m=document.querySelector('.cs-map'); if(!m||(window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches)) return;
+  var tick=false;
+  function upd(){ tick=false; var r=m.getBoundingClientRect(), vh=window.innerHeight, p=(r.top+r.height/2-vh/2)/vh; m.style.transform='translateY('+(p*-34).toFixed(1)+'px)'; }
+  addEventListener('scroll',function(){ if(!tick){ tick=true; requestAnimationFrame(upd); } },{passive:true}); addEventListener('resize',upd); upd();
+})();
+</script>
+</body>
+</html>
